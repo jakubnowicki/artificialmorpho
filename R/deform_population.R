@@ -1,6 +1,21 @@
-# tworzy zdeformowaną tektonicznie populację
+#' Deform population
+#'
+#' Deforms population in random way.
+#'
+#' @param data data array
+#' @param min.a minimal deformation amount; default = 0.8
+#' @param max.a maximum deformation amount; default = 1.2
+#' @param min.theta minimal deformation angle; default = -0.5
+#' @param max.theta maximum deformation angle; default = 0.5
+#' @param diff.elements should elements of single object have slightly diffrent, random deformation; default = FALSE
+#' @param curves optional curves matrix for creatin elements list; default = NULL
+#' @param split.list opional list of elements; default = NULL
+#' @param random.sd optional standard deviation of randomness in element version; default = NULL
+#' @export
 
-deform.population <- function(data,min.a=0.8,max.a=1.2,min.theta=-0.5,max.theta=0.5,diff.elements = FALSE,curves = NULL,split.list=NULL,random.sd=NULL) {
+
+deform.population <- function(data,min.a=0.8,max.a=1.2,min.theta=-0.5,max.theta=0.5,diff.elements = FALSE,curves = NULL,
+                              split.list=NULL,random.sd=NULL) {
   coords <- data$coords
   n.specimens <- dim(coords)[3]
   output.coords <- NULL

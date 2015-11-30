@@ -1,4 +1,13 @@
-# deformuje obiekt podzielony na elementy i wporwadza element losowych różnic w deformacji
+#' Deform object divided into elements
+#'
+#' Deforms object with randomized strain matrix, randomization is common for landmarks in the same element.
+#'
+#' @param data data matrix
+#' @param elements.list list of elements (landmark numbers)
+#' @param a deformation amount
+#' @param theta deformation angle
+#' @param random.sd deformation random sd
+#' @export
 
 deform.elements <- function(data,elements.list,a,theta,random.sd) {
   splited <- split.matrix(data,elements.list)

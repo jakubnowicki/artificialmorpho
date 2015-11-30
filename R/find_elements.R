@@ -1,3 +1,10 @@
+#' Search for elements
+#'
+#' Search for elements in semilandmark matrix.
+#'
+#' @param curves curves matrix
+#' @export
+
 # szuka serii landmarków lezących na współnych krzywych - łączy krzywe łączce się wspólnymi landmarkami
 
 find.elements <- function(curves) {
@@ -11,7 +18,7 @@ find.elements <- function(curves) {
     if (any(com==TRUE)) {
       com.num <- which(com==TRUE)
       curves.list[[i]] <- c(unlist(curves.list[i]),unlist(curves.list[com.num]))
-      curves.list <- curves.list[-com.num]  
+      curves.list <- curves.list[-com.num]
     }
     i <- i+1
   }
