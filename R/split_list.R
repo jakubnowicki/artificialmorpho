@@ -1,4 +1,10 @@
-# dzieli zestaw landmarków według elementów stowrzonych na podstawie krzywych
+#' Split landmarks matrix into elements
+#'
+#' Splits landmark matrix into list of elements
+#'
+#' @param data matrix of landmarks
+#' @param curves curves matrix
+#' @export
 
 split.list <- function(data,curves) {
   elements <- find.elements(curves)

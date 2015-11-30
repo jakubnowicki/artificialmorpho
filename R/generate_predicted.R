@@ -1,3 +1,14 @@
+#' Create artificial landmark set
+#'
+#' Generates artificial landmark set based on model.
+#'
+#' @param model model
+#' @param predictor predictor
+#' @param random.sd standard deviation of coefficients randomness; default = 0.0001
+#' @param elements randomization constant in elements; default = FALSE
+#' @param elements.list optional list of elements; default = NULL
+#' @export
+
 # tworzy sztuczny zestaw landmarków na podstawie zadanego modelu
 
 generate.predicted <- function(model, predictor, random.sd = 0.0001,elements=FALSE,elements.list=NULL) {

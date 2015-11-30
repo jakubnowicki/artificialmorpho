@@ -1,4 +1,9 @@
-# zmiana postaci z matrycy na element array
+#' Matrix to array element
+#'
+#' Convert matrix into array element
+#'
+#' @param data matrix
+#' @export
 
 two.d.matrix <- function(data) {
   n.landmarks <- ncol(data)/2

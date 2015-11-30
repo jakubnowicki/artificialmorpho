@@ -1,11 +1,12 @@
 Package: artificialmorpho
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1
+Title: Generator of artificial landmark sets
+Version: 0.01
 Date: 2015-11-30
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
+Author: Jakub Nowicki
+Maintainer: Jakub Nowicki <j.nowicki@student.uw.edu.pl>
 Description: More about what it does (maybe more than one line)
-License: What license is it under?
+License: GLP-2
 LazyData: TRUE
 RoxygenNote: 5.0.1
+Imports: RetroGeomMorph, morphoutils
