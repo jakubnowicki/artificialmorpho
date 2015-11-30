@@ -8,8 +8,10 @@
 #' @param elements randomization constant in elements; default = FALSE
 #' @param elements.list optional list of elements; default = NULL
 #' @export
-
-# tworzy sztuczny zestaw landmarków na podstawie zadanego modelu
+#' @import RetroGeoMorph
+#' @import morphoutils
+#' @import geomorph
+#' @import abind
 
 generate.predicted <- function(model, predictor, random.sd = 0.0001,elements=FALSE,elements.list=NULL) {
   coefficients.matrix <- model$coefficients

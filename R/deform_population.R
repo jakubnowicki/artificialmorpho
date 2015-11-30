@@ -12,6 +12,10 @@
 #' @param split.list opional list of elements; default = NULL
 #' @param random.sd optional standard deviation of randomness in element version; default = NULL
 #' @export
+#' @import RetroGeoMorph
+#' @import morphoutils
+#' @import geomorph
+#' @import abind
 
 
 deform.population <- function(data,min.a=0.8,max.a=1.2,min.theta=-0.5,max.theta=0.5,diff.elements = FALSE,curves = NULL,

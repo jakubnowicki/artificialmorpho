@@ -14,8 +14,11 @@
 #' @param elements optional randomization constant in elements
 #' @param elements.list list of elements
 #' @export
-
-# tworzy sztuczną populację na odstwie modelu
+#' @import RetroGeoMorph
+#' @import morphoutils
+#' @import geomorph
+#' @import abind
+#' @import devtools
 
 sample.population <- function(model,population.size = 10,Csize = c(10,100),curves = NULL, symmetry = FALSE, mid = NULL,
                               left = NULL, right = NULL, random.sd = 0.0001,elements = FALSE, elements.list = NULL) {

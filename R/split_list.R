@@ -5,6 +5,10 @@
 #' @param data matrix of landmarks
 #' @param curves curves matrix
 #' @export
+#' @import RetroGeoMorph
+#' @import morphoutils
+#' @import geomorph
+#' @import abind
 
 split.list <- function(data,curves) {
   elements <- find.elements(curves)

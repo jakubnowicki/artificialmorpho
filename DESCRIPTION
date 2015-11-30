@@ -9,5 +9,10 @@ Description: More about what it does (maybe more than one line)
 License: GLP-2
 LazyData: TRUE
 RoxygenNote: 5.0.1
-Imports: devtools
-DevPackage: jakubnowicki/RetroGeoMorph, jakubnowicki/morphoutils
+Depends:
+    devtools,
+    morphoutils,
+    RetroGeoMorph,
+    geomorph,
+    abind
+Remotes: jakubnowicki/RetroGeoMorph, jakubnowicki/morphoutils
