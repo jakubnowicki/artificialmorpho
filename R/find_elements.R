@@ -5,8 +5,6 @@
 #' @param curves curves matrix
 #' @export
 
-# szuka serii landmarków lezących na współnych krzywych - łączy krzywe łączce się wspólnymi landmarkami
-
 find.elements <- function(curves) {
   curves.list <- matrix.to.list(curves,break.points = find.curves(curves))
   i <- 1

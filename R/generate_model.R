@@ -1,4 +1,8 @@
-# tworzzy model na podstawie prwdziwych landmarków
+#' Create linear model
+#'
+#' Creates linear of landmarks with size as predictor
+#' @param data landmarks array
+#' @export
 
 generate.model <- function(data) {
   data.m <- two.d.array(data$coords)

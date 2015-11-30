@@ -1,4 +1,12 @@
-# rozwiązuje równanie z 1 niewieadomoą w postaci y = ax + b
+#' Solves equation
+#'
+#' Solves equation y = ax + b
+#'
+#' @param interception interception
+#' @param slope slope
+#' @param x x
+#' @param y y
+#' @export
 
 find.model.response.from.coeff <- function(interception, slope,x=NA,y=NA) {
   if (is.na(x) & is.na(y)) {
