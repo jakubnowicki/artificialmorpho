@@ -3,6 +3,7 @@
 #' Creates linear of landmarks with size as predictor
 #' @param data landmarks array
 #' @export
+#' @import geomorph
 
 generate.model <- function(data) {
   data.m <- two.d.array(data$coords)

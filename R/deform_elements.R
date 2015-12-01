@@ -8,10 +8,7 @@
 #' @param theta deformation angle
 #' @param random.sd deformation random sd
 #' @export
-#' @import RetroGeoMorph
 #' @import morphoutils
-#' @import geomorph
-#' @import abind
 
 deform.elements <- function(data,elements.list,a,theta,random.sd) {
   splited <- split.matrix(data,elements.list)

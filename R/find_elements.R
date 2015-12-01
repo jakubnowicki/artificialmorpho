@@ -4,10 +4,7 @@
 #'
 #' @param curves curves matrix
 #' @export
-#' @import RetroGeoMorph
 #' @import morphoutils
-#' @import geomorph
-#' @import abind
 
 find.elements <- function(curves) {
   curves.list <- matrix.to.list(curves,break.points = find.curves(curves))

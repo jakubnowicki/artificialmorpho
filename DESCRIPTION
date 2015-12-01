@@ -10,9 +10,7 @@ License: GLP-2
 LazyData: TRUE
 RoxygenNote: 5.0.1
 Depends:
-    devtools,
     morphoutils,
-    RetroGeoMorph,
     geomorph,
     abind
-Remotes: jakubnowicki/RetroGeoMorph, jakubnowicki/morphoutils
+Remotes: jakubnowicki/morphoutils
